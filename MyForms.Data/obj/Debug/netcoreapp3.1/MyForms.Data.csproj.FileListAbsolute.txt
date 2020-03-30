@@ -1,6 +1,3 @@
-C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.csprojAssemblyReference.cache
-C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.AssemblyInfoInputs.cache
-C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.AssemblyInfo.cs
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\MyForms.Data.dll.config
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\MyForms.Data.deps.json
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\MyForms.Data.runtimeconfig.json
@@ -9,6 +6,9 @@ C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\MyFor
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\MyForms.Data.pdb
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\myForms.Core.dll
 C:\Users\mash339\source\repos\myForms\MyForms.Data\bin\Debug\netcoreapp3.1\myForms.Core.pdb
+C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.csprojAssemblyReference.cache
+C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.AssemblyInfoInputs.cache
+C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.AssemblyInfo.cs
 C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.csproj.CopyComplete
 C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.dll
 C:\Users\mash339\source\repos\myForms\MyForms.Data\obj\Debug\netcoreapp3.1\MyForms.Data.pdb
