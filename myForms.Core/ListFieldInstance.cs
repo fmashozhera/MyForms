@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class ListFieldInstance : FieldInstance
 {
-    public class ListFieldInstance : FieldInstance
-    {
-        public ICollection<ListFieldValueInstance> Values { get; set; }
-    }
+    public ICollection<ListFieldValueInstance> Values { get; set; }
 }

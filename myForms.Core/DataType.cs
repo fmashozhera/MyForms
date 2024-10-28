@@ -1,11 +1,10 @@
-﻿namespace myForms.Core
+﻿namespace MyForms.Domain;
+
+public enum DataType
 {
-    public enum DataType
-    {
-        Number,
-        String,
-        Date,
-        Boolean,
-        File
-    }
+    Number,
+    String,
+    Date,
+    Boolean,
+    File
 }

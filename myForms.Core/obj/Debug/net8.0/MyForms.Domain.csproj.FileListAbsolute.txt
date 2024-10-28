@@ -1,0 +1,12 @@
+C:\repos\MyForms\myForms.Core\bin\Debug\net8.0\MyForms.Domain.deps.json
+C:\repos\MyForms\myForms.Core\bin\Debug\net8.0\MyForms.Domain.dll
+C:\repos\MyForms\myForms.Core\bin\Debug\net8.0\MyForms.Domain.pdb
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.AssemblyInfoInputs.cache
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.AssemblyInfo.cs
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.csproj.CoreCompileInputs.cache
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.sourcelink.json
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.dll
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\refint\MyForms.Domain.dll
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\MyForms.Domain.pdb
+C:\repos\MyForms\myForms.Core\obj\Debug\net8.0\ref\MyForms.Domain.dll

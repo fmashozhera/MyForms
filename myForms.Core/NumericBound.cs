@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public enum  NumericBound
 {
-    public enum  NumericBound
-    {
-        Maximum,
-        Minimum
-    }
+    Maximum,
+    Minimum
 }

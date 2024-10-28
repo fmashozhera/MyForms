@@ -1,7 +1,6 @@
-﻿namespace myForms.Core
+﻿namespace MyForms.Domain;
+
+public class StringRegularExpressionConstraint : FieldConstraint
 {
-    public class StringRegularExpressionConstraint : FieldConstraint
-    {
-        public string Regex { get; set; }
-    }
+    public string Regex { get; set; }
 }

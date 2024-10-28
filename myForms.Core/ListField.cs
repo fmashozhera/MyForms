@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class ListField : Field
 {
-    public class ListField : Field
-    {
-        public ICollection<ListFieldValue> Values { get; set; }
-    }
+    public ICollection<ListFieldValue> Values { get; set; }
 }

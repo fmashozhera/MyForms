@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class MultiSelectFieldInstance : FieldInstance
 {
-    public class MultiSelectFieldInstance : FieldInstance
-    {
-        public ICollection<MultiSelectValueInstance> Values { get; set; }
-    }
+    public ICollection<MultiSelectValueInstance> Values { get; set; }
 }

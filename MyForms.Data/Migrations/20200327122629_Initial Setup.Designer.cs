@@ -7,298 +7,297 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyForms.Data;
 
-namespace MyForms.Data.Migrations
+namespace MyForms.Data.Migrations;
+
+[DbContext(typeof(MyFormsDbContext))]
+[Migration("20200327122629_Initial Setup")]
+partial class InitialSetup
 {
-    [DbContext(typeof(MyFormsDbContext))]
-    [Migration("20200327122629_Initial Setup")]
-    partial class InitialSetup
+    protected override void BuildTargetModel(ModelBuilder modelBuilder)
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
-        {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+        modelBuilder
+            .HasAnnotation("ProductVersion", "3.1.3")
+            .HasAnnotation("Relational:MaxIdentifierLength", 128)
+            .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("myForms.Core.Field", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.Field", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("DataType")
-                        .HasColumnType("int");
+                b.Property<int>("DataType")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Discriminator")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("FormSectionId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("FormSectionId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Index")
-                        .HasColumnType("int");
+                b.Property<int>("Index")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Name")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("FormSectionId");
+                b.HasIndex("FormSectionId");
 
-                    b.ToTable("Fields");
+                b.ToTable("Fields");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Field");
-                });
+                b.HasDiscriminator<string>("Discriminator").HasValue("Field");
+            });
 
-            modelBuilder.Entity("myForms.Core.FieldConstraint", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.FieldConstraint", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Discriminator")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("FieldId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("FieldId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsValid")
-                        .HasColumnType("bit");
+                b.Property<bool>("IsValid")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Name")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("FieldId");
+                b.HasIndex("FieldId");
 
-                    b.ToTable("FieldConstraint");
+                b.ToTable("FieldConstraint");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("FieldConstraint");
-                });
+                b.HasDiscriminator<string>("Discriminator").HasValue("FieldConstraint");
+            });
 
-            modelBuilder.Entity("myForms.Core.Form", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.FormTemplate", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Discriminator")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Name")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Forms");
+                b.ToTable("Forms");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Form");
-                });
+                b.HasDiscriminator<string>("Discriminator").HasValue("FormTemplate");
+            });
 
-            modelBuilder.Entity("myForms.Core.FormSection", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.FormSection", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("FormId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("FormId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Index")
-                        .HasColumnType("int");
+                b.Property<int>("Index")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Name")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("FormId");
+                b.HasIndex("FormId");
 
-                    b.ToTable("FormSections");
-                });
+                b.ToTable("FormSections");
+            });
 
-            modelBuilder.Entity("myForms.Core.ListFieldValue", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.ListFieldValue", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ListFieldId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("ListFieldId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("DataType")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("ListFieldId");
+                b.HasIndex("ListFieldId");
 
-                    b.ToTable("ListFieldValues");
-                });
+                b.ToTable("ListFieldValues");
+            });
 
-            modelBuilder.Entity("myForms.Core.MultiSelectValue", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+        modelBuilder.Entity("MyForms.Domain.MultiSelectValue", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("MultiSelectFieldId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("MultiSelectFieldId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("Selected")
-                        .HasColumnType("bit");
+                b.Property<bool>("Selected")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("DataType")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("MultiSelectFieldId");
+                b.HasIndex("MultiSelectFieldId");
 
-                    b.ToTable("MultiSelectValue");
-                });
+                b.ToTable("MultiSelectValue");
+            });
 
-            modelBuilder.Entity("myForms.Core.ListField", b =>
-                {
-                    b.HasBaseType("myForms.Core.Field");
+        modelBuilder.Entity("MyForms.Domain.ListField", b =>
+            {
+                b.HasBaseType("MyForms.Domain.Field");
 
-                    b.HasDiscriminator().HasValue("ListField");
-                });
+                b.HasDiscriminator().HasValue("ListField");
+            });
 
-            modelBuilder.Entity("myForms.Core.MultiSelectField", b =>
-                {
-                    b.HasBaseType("myForms.Core.Field");
+        modelBuilder.Entity("MyForms.Domain.MultiSelectField", b =>
+            {
+                b.HasBaseType("MyForms.Domain.Field");
 
-                    b.Property<bool>("AllowMultipleValues")
-                        .HasColumnType("bit");
+                b.Property<bool>("AllowMultipleValues")
+                    .HasColumnType("bit");
 
-                    b.HasDiscriminator().HasValue("MultiSelectField");
-                });
+                b.HasDiscriminator().HasValue("MultiSelectField");
+            });
 
-            modelBuilder.Entity("myForms.Core.SimpleField", b =>
-                {
-                    b.HasBaseType("myForms.Core.Field");
+        modelBuilder.Entity("MyForms.Domain.SimpleFieldType", b =>
+            {
+                b.HasBaseType("MyForms.Domain.Field");
 
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("DataType")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("SimpleField");
-                });
+                b.HasDiscriminator().HasValue("SimpleFieldType");
+            });
 
-            modelBuilder.Entity("myForms.Core.DateRangeConstraint", b =>
-                {
-                    b.HasBaseType("myForms.Core.FieldConstraint");
+        modelBuilder.Entity("MyForms.Domain.DateRangeConstraint", b =>
+            {
+                b.HasBaseType("MyForms.Domain.FieldConstraint");
 
-                    b.Property<DateTime>("Maximum")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("Maximum")
+                    .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Minimum")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("Minimum")
+                    .HasColumnType("datetime2");
 
-                    b.HasDiscriminator().HasValue("DateRangeConstraint");
-                });
+                b.HasDiscriminator().HasValue("DateRangeConstraint");
+            });
 
-            modelBuilder.Entity("myForms.Core.FieldNumericConstraint", b =>
-                {
-                    b.HasBaseType("myForms.Core.FieldConstraint");
+        modelBuilder.Entity("MyForms.Domain.FieldNumericConstraint", b =>
+            {
+                b.HasBaseType("MyForms.Domain.FieldConstraint");
 
-                    b.Property<int>("NumericBound")
-                        .HasColumnType("int");
+                b.Property<int>("NumericBound")
+                    .HasColumnType("int");
 
-                    b.Property<int>("Value")
-                        .HasColumnType("int");
+                b.Property<int>("DataType")
+                    .HasColumnType("int");
 
-                    b.HasDiscriminator().HasValue("FieldNumericConstraint");
-                });
+                b.HasDiscriminator().HasValue("FieldNumericConstraint");
+            });
 
-            modelBuilder.Entity("myForms.Core.StringRegularExpressionConstraint", b =>
-                {
-                    b.HasBaseType("myForms.Core.FieldConstraint");
+        modelBuilder.Entity("MyForms.Domain.StringRegularExpressionConstraint", b =>
+            {
+                b.HasBaseType("MyForms.Domain.FieldConstraint");
 
-                    b.Property<string>("Regex")
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("Regex")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("StringRegularExpressionConstraint");
-                });
+                b.HasDiscriminator().HasValue("StringRegularExpressionConstraint");
+            });
 
-            modelBuilder.Entity("myForms.Core.ComplexForm", b =>
-                {
-                    b.HasBaseType("myForms.Core.Form");
+        modelBuilder.Entity("MyForms.Domain.ComplexForm", b =>
+            {
+                b.HasBaseType("MyForms.Domain.FormTemplate");
 
-                    b.HasDiscriminator().HasValue("ComplexForm");
-                });
+                b.HasDiscriminator().HasValue("ComplexForm");
+            });
 
-            modelBuilder.Entity("myForms.Core.SubForm", b =>
-                {
-                    b.HasBaseType("myForms.Core.Form");
+        modelBuilder.Entity("MyForms.Domain.SubForm", b =>
+            {
+                b.HasBaseType("MyForms.Domain.FormTemplate");
 
-                    b.Property<Guid>("ComplexFormId")
-                        .HasColumnType("uniqueidentifier");
+                b.Property<Guid>("ComplexFormId")
+                    .HasColumnType("uniqueidentifier");
 
-                    b.HasIndex("ComplexFormId");
+                b.HasIndex("ComplexFormId");
 
-                    b.HasDiscriminator().HasValue("SubForm");
-                });
+                b.HasDiscriminator().HasValue("SubForm");
+            });
 
-            modelBuilder.Entity("myForms.Core.Field", b =>
-                {
-                    b.HasOne("myForms.Core.FormSection", "FormSection")
-                        .WithMany("Fields")
-                        .HasForeignKey("FormSectionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.Field", b =>
+            {
+                b.HasOne("MyForms.Domain.FormSection", "FormSection")
+                    .WithMany("Fields")
+                    .HasForeignKey("FormSectionId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
-            modelBuilder.Entity("myForms.Core.FieldConstraint", b =>
-                {
-                    b.HasOne("myForms.Core.Field", "Field")
-                        .WithMany("FieldConstraints")
-                        .HasForeignKey("FieldId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.FieldConstraint", b =>
+            {
+                b.HasOne("MyForms.Domain.Field", "Field")
+                    .WithMany("FieldConstraints")
+                    .HasForeignKey("FieldId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
-            modelBuilder.Entity("myForms.Core.FormSection", b =>
-                {
-                    b.HasOne("myForms.Core.Form", "Form")
-                        .WithMany("FormSections")
-                        .HasForeignKey("FormId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.FormSection", b =>
+            {
+                b.HasOne("MyForms.Domain.FormTemplate", "FormTemplate")
+                    .WithMany("FormSections")
+                    .HasForeignKey("FormId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
-            modelBuilder.Entity("myForms.Core.ListFieldValue", b =>
-                {
-                    b.HasOne("myForms.Core.ListField", "ListField")
-                        .WithMany("Values")
-                        .HasForeignKey("ListFieldId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.ListFieldValue", b =>
+            {
+                b.HasOne("MyForms.Domain.ListField", "ListField")
+                    .WithMany("Values")
+                    .HasForeignKey("ListFieldId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
-            modelBuilder.Entity("myForms.Core.MultiSelectValue", b =>
-                {
-                    b.HasOne("myForms.Core.MultiSelectField", "MultiSelectField")
-                        .WithMany("Values")
-                        .HasForeignKey("MultiSelectFieldId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.MultiSelectValue", b =>
+            {
+                b.HasOne("MyForms.Domain.MultiSelectField", "MultiSelectField")
+                    .WithMany("Values")
+                    .HasForeignKey("MultiSelectFieldId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
-            modelBuilder.Entity("myForms.Core.SubForm", b =>
-                {
-                    b.HasOne("myForms.Core.ComplexForm", "ComplexForm")
-                        .WithMany("SubForms")
-                        .HasForeignKey("ComplexFormId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+        modelBuilder.Entity("MyForms.Domain.SubForm", b =>
+            {
+                b.HasOne("MyForms.Domain.ComplexForm", "ComplexForm")
+                    .WithMany("SubForms")
+                    .HasForeignKey("ComplexFormId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 #pragma warning restore 612, 618
-        }
     }
 }

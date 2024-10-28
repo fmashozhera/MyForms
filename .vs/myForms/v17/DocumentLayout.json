@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\repos\\MyForms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}|MyForms.Tests.Domain\\MyForms.Tests.Domain.csproj|c:\\repos\\myforms\\myforms.tests.domain\\stepdefinitions\\tablefieldstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}|MyForms.Tests.Domain\\MyForms.Tests.Domain.csproj|solutionrelative:myforms.tests.domain\\stepdefinitions\\tablefieldstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}|MyForms.Tests.Domain\\MyForms.Tests.Domain.csproj|c:\\repos\\myforms\\myforms.tests.domain\\features\\tablefield.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}|MyForms.Tests.Domain\\MyForms.Tests.Domain.csproj|solutionrelative:myforms.tests.domain\\features\\tablefield.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\tablefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\tablefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\fieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\singleselectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\singleselectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\simplefieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\simplefieldtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\selectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\selectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|c:\\repos\\myforms\\myforms.core\\fieldtypes\\multiselectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8710134E-6D05-4324-A0DA-5F033054C297}|myForms.Core\\MyForms.Domain.csproj|solutionrelative:myforms.core\\fieldtypes\\multiselectfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 44,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:156:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:155:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:158:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:157:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:160:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:162:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:161:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:164:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:163:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TableFieldStepDefinitions.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\MyForms.Tests.Domain\\StepDefinitions\\TableFieldStepDefinitions.cs",
+              "RelativeDocumentMoniker": "MyForms.Tests.Domain\\StepDefinitions\\TableFieldStepDefinitions.cs",
+              "ToolTip": "C:\\repos\\MyForms\\MyForms.Tests.Domain\\StepDefinitions\\TableFieldStepDefinitions.cs",
+              "RelativeToolTip": "MyForms.Tests.Domain\\StepDefinitions\\TableFieldStepDefinitions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T10:55:23.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableField.feature",
+              "DocumentMoniker": "C:\\repos\\MyForms\\MyForms.Tests.Domain\\Features\\TableField.feature",
+              "RelativeDocumentMoniker": "MyForms.Tests.Domain\\Features\\TableField.feature",
+              "ToolTip": "C:\\repos\\MyForms\\MyForms.Tests.Domain\\Features\\TableField.feature",
+              "RelativeToolTip": "MyForms.Tests.Domain\\Features\\TableField.feature",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-10-19T10:46:17.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TableField.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\TableField.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\TableField.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\TableField.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\TableField.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:29:50.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MultiSelectField.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\MultiSelectField.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\MultiSelectField.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\MultiSelectField.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\MultiSelectField.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:05:33.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FieldType.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\FieldType.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\FieldType.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\FieldType.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\FieldType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:04:47.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SimpleFieldType.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SimpleFieldType.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\SimpleFieldType.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SimpleFieldType.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\SimpleFieldType.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:04:29.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SingleSelectField.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SingleSelectField.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\SingleSelectField.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SingleSelectField.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\SingleSelectField.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:03:55.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectField.cs",
+              "DocumentMoniker": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SelectField.cs",
+              "RelativeDocumentMoniker": "myForms.Core\\FieldTypes\\SelectField.cs",
+              "ToolTip": "C:\\repos\\MyForms\\myForms.Core\\FieldTypes\\SelectField.cs",
+              "RelativeToolTip": "myForms.Core\\FieldTypes\\SelectField.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T15:03:22.682Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

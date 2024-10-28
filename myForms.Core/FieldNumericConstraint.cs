@@ -1,8 +1,7 @@
-﻿namespace myForms.Core
+﻿namespace MyForms.Domain;
+
+public class FieldNumericConstraint : FieldConstraint
 {
-    public class FieldNumericConstraint : FieldConstraint
-    {
-        public int Value { get; set; }
-        public NumericBound  NumericBound{ get; set; }
-    }
+    public int Value { get; set; }
+    public NumericBound  NumericBound{ get; set; }
 }

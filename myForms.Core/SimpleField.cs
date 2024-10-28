@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class SimpleField : Field
 {
-    public class SimpleField : Field
-    {
-        public string Value { get; set; }
-    }
+    public string Value { get; set; }
 }

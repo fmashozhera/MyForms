@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = myForms.Core
+build_property.ProjectDir = C:\repos\MyForms\myForms.Core\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class ComplexForm : FormTemplate
 {
-    public class ComplexForm : Form
-    {
-        public ICollection<SubForm> SubForms { set; get; }
-    }
+    public ICollection<SubForm> SubForms { set; get; }
 }

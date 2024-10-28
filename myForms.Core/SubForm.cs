@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class SubForm : FormTemplate
 {
-    public class SubForm : Form
-    {
-        public ComplexForm ComplexForm { get; set; }
-        public Guid ComplexFormId { get; set; }
-    }
+    public ComplexForm ComplexForm { get; set; }
+    public Guid ComplexFormId { get; set; }
 }

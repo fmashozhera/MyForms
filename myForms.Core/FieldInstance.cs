@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myForms.Core
+namespace MyForms.Domain;
+
+public class FieldInstance
 {
-    public class FieldInstance
-    {
-        public Guid Id { get; set; }
-        public FormSectionInstance FormSectionInstance { get; set; }
-        public Guid FormSectionInstanceId { get; set; }
-        public Guid FieldId { get; set; }
-        public Field Field { get; set; }
-    }
+    public Guid Id { get; set; }
+    public FormSectionInstance FormSectionInstance { get; set; }
+    public Guid FormSectionInstanceId { get; set; }
+    public Guid FieldId { get; set; }
+    public Field Field { get; set; }
 }
