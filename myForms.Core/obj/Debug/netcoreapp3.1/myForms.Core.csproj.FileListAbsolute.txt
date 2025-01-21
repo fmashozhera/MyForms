@@ -1,7 +1,0 @@
-C:\Users\mash339\source\repos\myForms\myForms.Core\bin\Debug\netcoreapp3.1\myForms.Core.deps.json
-C:\Users\mash339\source\repos\myForms\myForms.Core\bin\Debug\netcoreapp3.1\myForms.Core.dll
-C:\Users\mash339\source\repos\myForms\myForms.Core\bin\Debug\netcoreapp3.1\myForms.Core.pdb
-C:\Users\mash339\source\repos\myForms\myForms.Core\obj\Debug\netcoreapp3.1\myForms.Core.AssemblyInfoInputs.cache
-C:\Users\mash339\source\repos\myForms\myForms.Core\obj\Debug\netcoreapp3.1\myForms.Core.AssemblyInfo.cs
-C:\Users\mash339\source\repos\myForms\myForms.Core\obj\Debug\netcoreapp3.1\myForms.Core.dll
-C:\Users\mash339\source\repos\myForms\myForms.Core\obj\Debug\netcoreapp3.1\myForms.Core.pdb

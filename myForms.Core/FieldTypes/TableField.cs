@@ -57,7 +57,7 @@ public record TableCell
 {
     public int ColumnIndex { get; set; }
     public int RowIndex { get; set; }
-    FieldType Field { get; set; }
+    OldFieldType Field { get; set; }
 }
 
 

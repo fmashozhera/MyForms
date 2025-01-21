@@ -7,7 +7,7 @@ namespace MyForms.Tests.Domain.StepDefinitions
     public class FieldTypeTStepDefinitions
     {
         private Type? genericType;
-        FieldType? constructedType;
+        OldFieldType? constructedType;
         string? errorMessage;
         string? createdValue;
         

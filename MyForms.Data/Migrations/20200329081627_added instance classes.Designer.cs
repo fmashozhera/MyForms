@@ -285,14 +285,14 @@ partial class addedinstanceclasses
                 b.HasDiscriminator().HasValue("MultiSelectField");
             });
 
-        modelBuilder.Entity("MyForms.Domain.SimpleFieldType", b =>
+        modelBuilder.Entity("MyForms.Domain.FieldType", b =>
             {
                 b.HasBaseType("MyForms.Domain.Field");
 
                 b.Property<string>("DataType")
                     .HasColumnType("nvarchar(max)");
 
-                b.HasDiscriminator().HasValue("SimpleFieldType");
+                b.HasDiscriminator().HasValue("FieldType");
             });
 
         modelBuilder.Entity("MyForms.Domain.DateRangeConstraint", b =>

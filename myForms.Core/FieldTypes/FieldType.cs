@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MyForms.Domain.Constants;
+using System;
+using System.Linq;
 
 namespace MyForms.Domain.FieldTypes;
 
-public record FieldType
+public record FieldType<T> 
 {
-    protected static Type[] _simpleDataTypes =
+    public T Value;
+    public FieldType(T value)
     {
-        typeof(int),
-        typeof(double),
-        typeof(string),
-        typeof(bool),
-        typeof(DateTime),
-        typeof(byte[])
-    };
-
-    public static SimpleFieldType<T> Create<T>(T value)
-    {
-        return new SimpleFieldType<T>(value);
+        if (IsSimpleDataType(value.GetType()))
+        {
+            Value = value;
+        }
+        else
+        {
+            throw new ArgumentException("The provided base field type is not allowed.");
+        }
     }
+    private bool IsSimpleDataType(Type t)
+    => DomainConstants.SimpleDataTypes.Contains(t);
 
-    public static SingleSelectField<T> CreateSingleSelectField<T>(IEnumerable<T> optionsList)
+    public static FieldType<T> Create<T>(T value)
     {
-        return new SingleSelectField<T>(optionsList);
+        return new FieldType<T>(value);
     }
 }
-
 
