@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{77909FF6-2C0D-4105-ADCF-8848A48309CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyForms.Tests.Domain", "MyForms.Tests.Domain\MyForms.Tests.Domain.csproj", "{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyForms.Tests.Domain", "MyForms.Tests.Domain\MyForms.Tests.Domain.csproj", "{8E24AF8D-5EE2-4550-AE05-2D74FF0A2B04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

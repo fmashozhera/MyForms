@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace MyForms.Domain.FieldTypes;
 
-public record SelectField<T> : OldFieldType
+public record SelectField<T> 
 { 
     protected ICollection<T> _optionsList;
     public IEnumerable<T> OptionsList { get => _optionsList.ToList(); }

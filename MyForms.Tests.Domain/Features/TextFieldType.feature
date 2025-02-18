@@ -1,26 +1,17 @@
-Feature: FieldType<T>
+Feature: TextFieldType
 
-The most basic form field type. All other field types are built from it.
+Simple text input fields
 
 @FieldTypes
-Scenario: Create a FieldType
-	Given the generic type is <genericType>
-	When a field type is created of that type generic type
-	Then the value of the field type must be of type <genericType>
+Scenario: Create a TextField by providing minimum required information.
+	Given the index is <index>
+	And the label is <label>
+	When the TextField.Create method is called with these arguments
+	Then a Text field should be created with  <index>, <label>,  minimumLenth>,  <maximumLength>,  <isRequired>, <validationRegex>
 Examples:
-	| genericType       |
-	| "System.Int32"    |			
-	| "System.Double"   |
-	| "System.String"   |
-	| "System.Boolean"  |
-	| "System.DateTime" |
-	| "System.Byte[]"   |
+	| index | label              | minimumLenth | maximumLength | isRequired | validationRegex |
+	| 1     | "Text Field Label" | 1            | 2147483647    | true      | ""              |
+	
 
-Scenario: Create a FieldType with an unpermitted primitive type
-	Given the generic type is <genericType>
-	When a field type is created of that type generic type
-	Then the value of the error message 'The provided base field type is not allowed.' is thrown
-Examples:
-	| genericType   |
-	| "System.Char" |
+
 	

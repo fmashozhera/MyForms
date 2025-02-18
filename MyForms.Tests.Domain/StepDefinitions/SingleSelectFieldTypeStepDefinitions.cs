@@ -24,7 +24,7 @@ namespace MyForms.Tests.Domain.StepDefinitions
         [When("When a single select field type is created")]
         public void WhenWhenASingleSelectFieldTypeIsCreated()
         {
-            _singleSelectField = OldFieldType.CreateSingleSelectField(_optionsList);
+            //_singleSelectField = OldFieldType.CreateSingleSelectField(_optionsList);
         }
 
         [Then("The created field must have only the values in the options list")]
