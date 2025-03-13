@@ -111,10 +111,104 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.AndAsync(string.Format("the label is {0}", label), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 9
- await testRunner.WhenAsync("the TextField.Create method is call with these arguments", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync("the TextField Create method is called with these arguments", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
- await testRunner.ThenAsync(string.Format("a Text field should be created with  {0}, {1},  {2},  {3},  {4}, {5}", index, label, minimumLenth, maximumLength, isRequired, validationRegex), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(string.Format("a Text field should be created with  {0}, {1},  {2},  {3}, {4} , {5}", index, label, minimumLenth, maximumLength, isRequired, validationRegex), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a TextField by providing all information.")]
+        [NUnit.Framework.CategoryAttribute("FieldTypes")]
+        [NUnit.Framework.TestCaseAttribute("1", "\"Text Field Label\"", "1", "2147483647", "\"false\"", "\"\"", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "\"Label\"", "10", "20", "\"true\"", "\"76y6e9i\"", null)]
+        public async System.Threading.Tasks.Task CreateATextFieldByProvidingAllInformation_(string index, string label, string minimumLenth, string maximumLength, string isRequired, string validationRegex, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "FieldTypes"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("index", index);
+            argumentsOfScenario.Add("label", label);
+            argumentsOfScenario.Add("minimumLenth", minimumLenth);
+            argumentsOfScenario.Add("maximumLength", maximumLength);
+            argumentsOfScenario.Add("isRequired", isRequired);
+            argumentsOfScenario.Add("validationRegex", validationRegex);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Create a TextField by providing all information.", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 18
+ await testRunner.GivenAsync(string.Format("the index is {0}", index), ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 19
+ await testRunner.AndAsync(string.Format("the label is {0}", label), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 20
+ await testRunner.WhenAsync(string.Format("the TextField Create method is called with arguments additional argunments {0},  " +
+                            "{1}, {2} , {3}", minimumLenth, maximumLength, isRequired, validationRegex), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 22
+ await testRunner.ThenAsync(string.Format("a Text field should be created with  {0}, {1},  {2},  {3}, {4} , {5}", index, label, minimumLenth, maximumLength, isRequired, validationRegex), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a TextField by providing invalid information.")]
+        [NUnit.Framework.CategoryAttribute("FieldTypes")]
+        [NUnit.Framework.TestCaseAttribute("-1", "\"Text Field Label\"", "\"Field index cannot be less than 1\"", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "\"\"", "\"Field label is required\"", null)]
+        public async System.Threading.Tasks.Task CreateATextFieldByProvidingInvalidInformation_(string index, string label, string errorMessage, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "FieldTypes"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("index", index);
+            argumentsOfScenario.Add("label", label);
+            argumentsOfScenario.Add("errorMessage", errorMessage);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Create a TextField by providing invalid information.", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 29
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 30
+ await testRunner.GivenAsync(string.Format("the index is {0}", index), ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 31
+ await testRunner.AndAsync(string.Format("the label is {0}", label), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 32
+ await testRunner.WhenAsync("the TextField Create method is called with these arguments", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 33
+ await testRunner.ThenAsync(string.Format("an error message must be returned with message {0}", errorMessage), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

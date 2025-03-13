@@ -38,8 +38,8 @@ public record TextField
         if (string.IsNullOrEmpty(label))
             result.WithError("Field label is required");
 
-        if (index < 0)
-            result.WithError("Field index cannot be less than 0");
+        if (index < 1)
+            result.WithError("Field index cannot be less than 1");
 
         if(minimumLength > maximumLength)
             result.WithError($"Minum length cannot be greater than maximum length");
@@ -47,7 +47,7 @@ public record TextField
         if (minimumLength < 1)
             result.WithError("Minimum length cannot be less than 1");
 
-        if (result.Errors.Count > 1)
+        if (result.Errors.Count > 0)
             return result;
 
         return new TextField(label, index, isRequired, minimumLength, maximumLength, validationRegex);

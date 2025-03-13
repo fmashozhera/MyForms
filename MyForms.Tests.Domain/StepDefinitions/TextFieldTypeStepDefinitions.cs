@@ -1,7 +1,6 @@
-using System;
+using FluentResults;
 using MyForms.Domain.FieldTypes;
 using NUnit.Framework;
-using Reqnroll;
 
 namespace MyForms.Tests.Domain.StepDefinitions
 {
@@ -9,8 +8,9 @@ namespace MyForms.Tests.Domain.StepDefinitions
     public class TextFieldTypeStepDefinitions
     {
         private int index;
-        private string label;
-        private TextField textField;
+        private string? label;
+        private IEnumerable<string>? errors;       
+        private TextField? textField;
 
         [Given("the index is {int}")]
         public void GivenTheIndexIs(int index)
@@ -31,8 +31,17 @@ namespace MyForms.Tests.Domain.StepDefinitions
             if(result.IsSuccess) { textField = result.Value; }
         }
 
+        [When("the TextField Create method is called with these arguments")]
+        public void WhenTheTextFieldCreateMethodIsCalledWithTheseArguments()
+        {
+            Result<TextField> textFieldResult = TextField.Create(label, index);
+            if (textFieldResult.IsSuccess)
+                textField = textFieldResult.Value;
 
-        [Then("a Text field should be created with  {int}, {string},  {int},  {int},  {string}, {string}")]
+            errors = textFieldResult.Errors.Select(t=>t.Message).ToList();
+        }
+
+        [Then("a Text field should be created with  {int}, {string},  {int},  {int}, {string} , {string}")]
         public void ThenATextFieldShouldBeCreatedWith(int index, string label, int minimumLength, int maximumLength, string @false, string validationRegex)
         {
             Assert.AreEqual(index, textField.Index);
@@ -43,7 +52,18 @@ namespace MyForms.Tests.Domain.StepDefinitions
             Assert.AreEqual(validationRegex, textField.ValidationRegex);
         }
 
+        [When("the TextField Create method is called with arguments additional argunments {int},  {int}, {string} , {string}")]
+        public void WhenTheTextFieldCreateMethodIsCalledWithArgumentsAdditionalArgunments(int minimumLength, int maximumLength, string required, string regularExpression)
+        {
+            Result<TextField> textFieldResult = TextField.Create(label, index,isRequired:bool.Parse(required),minimumLength:minimumLength,maximumLength:maximumLength,validationRegex:regularExpression);
+            if (textFieldResult.IsSuccess)
+                textField = textFieldResult.Value;
+        }
 
-
+        [Then("an error message must be returned with message {string}")]
+        public void ThenAnErrorMessageMustBeReturnedWithMessage(string errorMessage)
+        {
+            Assert.IsTrue(errors.Contains(errorMessage));
+        }
     }
 }
