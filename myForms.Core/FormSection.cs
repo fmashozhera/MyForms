@@ -1,9 +1,7 @@
 ﻿using FluentResults;
 using MyForms.Domain.FieldTypes;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 
 namespace MyForms.Domain;
 
@@ -59,6 +57,18 @@ public class FormSection
         Result<TextField> textField = TextField.Create(label, index, isRequired, minimumLength, maximumLength, validationRegex);
         return textFieldResult;
     }
+    
+    public Result RemoveTextField(string label)
+    {
+        if (!IsFieldOnFormSection(label))
+            return Result.Fail("There is no field with the given label.");
+
+        TextField removedField = _textFields.First(t => t.Label == label);
+        _textFields.Remove(removedField);
+        return Result.Ok();
+    }
+
+    private bool IsFieldOnFormSection(string label) => _textFields.Any(t => t.Label == label);
     private void ValidateTextFieldDetails(string label,
                                           int index,
                                           Result<TextField> textFieldResult)
@@ -71,8 +81,7 @@ public class FormSection
     }
     private bool IsIndexValid(int index) => !_textFields.Any(f => f.Index == index);
     private bool IsFieldLabelValid(string label) => !_textFields.Any(f => f.Label == label);
-    public Result Update(int index,
-                         string name)
+    public Result Update(int index, string name)
     {
         Result<FormSection> formSectionResult = ValidateFormSectionDetails(index, name);
         if (!formSectionResult.IsSuccess)
